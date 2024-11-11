@@ -48,7 +48,7 @@ ID: {id}
 {email}
 {phone}
 
-print(f"Hair: {hair:15} Eyes: {eye}")s
-print(f"Month: {month:14} Training: {train}")
+Hair: {hair:15} Eyes: {eye}
+Month: {month:14} Training: {train}
 ----------------------------------------
 """)
