@@ -7,7 +7,8 @@
         There are 4 endings in total with 9 seperate choices.
 
         I showed my design to my Grandma and my Bothter and explained how the code works.  My grandma said it 
-        gave her a headache to theink about all  of it.
+        gave her a headache to theink about all  of it.  My little brother said it was 'cool' which is high praise 
+        coming from him.
 
 """
 print('-----------')
