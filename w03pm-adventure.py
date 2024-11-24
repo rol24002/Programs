@@ -1,5 +1,15 @@
-# MY STORY
-print()
+"""
+        Madison Rollins Game Adventure. 
+
+        Half of this story was written by me a LONG time ago but after strugling with the code for AGES
+        I decided to use AI to generate some of the endings based on my ideas.  Some are edited some are not :)
+
+        There are 4 endings in total with 9 seperate choices.
+
+        I showed my design to my Grandma and my Bothter and explained how the code works.  My grandma said it 
+        gave her a headache to theink about all  of it.
+
+"""
 print('-----------')
 print()
 #Title
@@ -8,6 +18,10 @@ print()
 print('-----------')
 print()
 print()
+
+"""
+This is the Prolouge
+"""
 #p1 diolouge
 print("""
         Konstant couldn’t see.  It was as if every light in the cosmos burnt out leaving only the smell of ashes 
@@ -44,19 +58,30 @@ print("""
       
       "Now you must choose to accept this path, a DESTINY OF DANGER, or a MUNDANE END."
 """)
+
+"""  This is all of the prompts   """
+
+
 print()
 print('-----------')
 print()
 #opt 1 question
-print('Which do you choose a DESTINY OF DANGER or a MUNDANE END?')
+print('Which do you choose a destiny of DANGER or a mundane END?')
 print()
 #opt 1 input
-opt1 = input('Type your answer here: ')
+optI = input('Type your answer here: ')
 print()
-print('-----------')
+print('-----------')    
 print()
+
+"""
+This is all of the if, elif, else statements.
+"""
+
+
+
 #option 1 if, else  DESTINY OF DANGER
-if opt1.lowercase() == 'DESTINY OF DANGER':
+if optI.lower() == "danger":
     print("""
         "You have chosen well..."
         
@@ -82,10 +107,20 @@ if opt1.lowercase() == 'DESTINY OF DANGER':
         Hebdad was Konstants father, a kind an gentle man, who Konstant admired.  Breifly Konstant 
     wondered if he should SHARE HIS DREAM with his father.
 """)
+    print('-----------')
+    print()
+#opt A question
+    print('Should Konstant share his dream?')
+    print()
+#opt 2a input
+    optA = input('Type Yes or No: ')
+    print()
+    print('-----------')
+    print()
 #opt 1 else MUNDANE END
 else:
     print("""
-        So it shall be..."
+        "So it shall be..."
         
         The voice echoed its final words before fading into the void surrounding Konstant.  
     The void itself seemed to stretch and bend sucking every last particle of oxygen away 
@@ -125,21 +160,72 @@ else:
     joy of a warm meal. These were the true wonders of the universe.
         With a newfound acceptance, Konstant turned away from the window. He would embrace the mundane, not as a limitation, but as an 
     opportunity. He would find meaning in the everyday, and in doing so, discover the extraordinary within the ordinary.
+
+          Ending Unlocked: True Freedom!.....At least for now.
+""")
+    
+#DOES NOT SHARE HIS DREAM   2b
+if optA.lower() =='no':
+    print("""
+     Having made his choice, Konstant was on the road to Itea, the nearest town, to help an old family friend,
+Mr. Ganes, with a few repairs.  Konstant had never met him, but he was to spend the night at his home.
+
+
+    Konstant walked a few miles down the dusty road.  He had packed his sandals, some lamb jerky,
+a cloth of cheese and olives, and his himation in a small bag made of sheep leather.  He should have
+strode confidently, having traveled the road on foot many times before, although this time Konstant grew
+anxious with every step he made away from the safety of his home.  There was a sinking feeling that he had
+felt in the void except it was tantalizing.  He wanted to find the source of this feeling, everything else
+was irrelevant.  He walked entranced by the feeling into the thick dense forest of cypress and oak.  
+    Branches scraped against his body creating new noticeable scratches and tears in both flesh and cloth
+but he could not feel them.  All he could feel was the enthralling feeling of doom.  The forest seemed
+immobile as if everything in the world had stopped to let him pursue the strange emotion.  
+    Konstant happened to be walking toward the very hill he remembered in his dream.  On top of that hill
+stood a small marble edifice that resembled the Acropolis of Athens.  Gold and silver murals glistened in
+the sunlight bathing the temple and the hill in angelic light that would blind anyone who beheld it.  
+    He kept walking up the hill and onto the steps of the temple.  No one was there.  Konstant found that
+incredibly odd because temples were almost always bustling with visitors who came to worship the gods.  
+He crept forward trying to see what was going on inside of the temple.  The marble walls were covered in
+depictions of the Titans.  Above the entrance to the shrine was a beautiful ornate carving cast in gold
+that depicted Kronos swallowing his children.  Konstant felt odd staring at the image glorifying Cronus’s
+terrible deed.  To the sides were pillars of marble with veins of gold and silver that rested upon the backs
+of two large serpents whose Jaws were open wide as if stopped mid-hunt.  A cool breeze blew from the open
+doorway and gave Konstant a shiver that ran from his head to his toes.  Fear itched his bones and he felt like
+running, yet, the engravings were drawing him closer, begging him to reach out and feel the cold stone. 
 """)
     print()
     print('-----------')
     print()
-
-#opt 2a question
-    print('Should Konstant share his dream?')
+#opt 3a question
+    print('Should Konstant TOUCH the Carving or should he RUN away?')
     print()
-#opt 2a input
-    opt2 = input('Type Yes or No: ')
+#opt 3a input
+    optAB = input('Type your choice here: ')
     print()
     print('-----------')
     print()
+
+#If stone touch
+    if optAB.lower() == 'touch':
+        print("""
+            Drawn by the dark glimmer of the snake's emerald eyes, Konstant reached out to touch its cold, smooth
+        scales. As his fingertips brushed against the serpent's head, a surge of energy coursed through him, and a 
+        vision unfolded before his mind's eye.
+            He saw a world ravaged by darkness, a world on the brink of destruction. And he saw himself, a figure of
+        light, standing against the encroaching shadows. A sense of power, a power he had never known, surged within him.
+            When the vision faded, Konstant pulled his hand away from the serpent, his heart pounding. He had been 
+        chosen, marked by the gods for a great destiny. But with this newfound power came a heavy burden.  He was no
+        longer just a simple farm boy; the gods would make him a guardian of light, a protector of humanity. His 
+        journey had just begun, and the fate of the world rested in his hands.
+            As he left the temple Konstant's mind was racing, he was left with two choices: embrace his role as a hero
+        and confront the darkness, or let the darkness consume the world.
+
+              Ending Unlocked: CONFUSION
+        """)
+    
+
 #SHARE HIS DREAM
-if opt2.lowercase() == 'yes':
+else:
     print("""
     Konstant hesitated, his heart pounding in his chest. He had never shared such a strange and unsettling dream with anyone before. 
     Yet, there was something about his father that made him feel he could confide in him. Taking a deep breath, he began to speak.
@@ -157,98 +243,111 @@ unassuming who are chosen for great things. Perhaps the gods see something in yo
     “Thank you, Father,” he said, his voice filled with gratitude. “I will think about what you’ve said.”
     As Konstant returned to his work, he couldn’t shake the feeling that his life was about to change forever. The dream, the voice, and 
 his father’s words had ignited a spark within him, a spark that would soon set his destiny in motion. He pondered his options: should he 
-travel to the mysterious temple, consult the enigmatic Oracle of Delphi, or dismiss the dream as a mere figment of his imagination? 
+travel to the mysterious temple, consult the enigmatic Oracle of Delphi, or run away from the responsibility?
 
     The choice was his, and the fate of the world might depend on his choice.
+""")   
+    print()
+    print('-----------')
+    print()
+#opt 3a question
+    print('Should Konstant find the TEMPLE, visit the ORACLE, or RUN away from his fate?')
+    print()
+#opt 3a input
+    optAA = input('Type your choice here: ')
+    print()
+    print('-----------')
+    print()
+
+
+if optAA.lower() == 'temple':
+    print("""
+     Having made his choice, Konstant was on the road to Itea, the nearest town, to help an old family friend,
+Mr. Ganes, with a few repairs.  Konstant had never met him, but he was to spend the night at his home.
+
+
+    Konstant walked a few miles down the dusty road.  He had packed his sandals, some lamb jerky,
+a cloth of cheese and olives, and his himation in a small bag made of sheep leather.  He should have
+strode confidently, having traveled the road on foot many times before, although this time Konstant grew
+anxious with every step he made away from the safety of his home.  There was a sinking feeling that he had
+felt in the void except it was tantalizing.  He wanted to find the source of this feeling, everything else
+was irrelevant.  He walked entranced by the feeling into the thick dense forest of cypress and oak.  
+    Branches scraped against his body creating new noticeable scratches and tears in both flesh and cloth
+but he could not feel them.  All he could feel was the enthralling feeling of doom.  The forest seemed
+immobile as if everything in the world had stopped to let him pursue the strange emotion.  
+    Konstant happened to be walking toward the very hill he remembered in his dream.  On top of that hill
+stood a small marble edifice that resembled the Acropolis of Athens.  Gold and silver murals glistened in
+the sunlight bathing the temple and the hill in angelic light that would blind anyone who beheld it.  
+    He kept walking up the hill and onto the steps of the temple.  No one was there.  Konstant found that
+incredibly odd because temples were almost always bustling with visitors who came to worship the gods.  
+He crept forward trying to see what was going on inside of the temple.  The marble walls were covered in
+depictions of the Titans.  Above the entrance to the shrine was a beautiful ornate carving cast in gold
+that depicted Kronos swallowing his children.  Konstant felt odd staring at the image glorifying Cronus’s
+terrible deed.  To the sides were pillars of marble with veins of gold and silver that rested upon the backs
+of two large serpents whose Jaws were open wide as if stopped mid-hunt.  A cool breeze blew from the open
+doorway and gave Konstant a shiver that ran from his head to his toes.  Fear itched his bones and he felt like
+running, yet, the engravings were drawing him closer, begging him to reach out and feel the cold stone. 
 """)
-#DOES NOT SHARE HIS DREAM   2b
+    print()
+    print('-----------')
+    print()
+#opt 3a question
+    print('Should Konstant TOUCH the Carving or should he RUN away?')
+    print()
+#opt 3a input
+    optAB = input('Type your choice here: ')
+    print()
+    print('-----------')
+    print()
+
+elif optAA.lower() or optAB.lower() == 'run':
+    print("""
+    Fear gripped Konstant as his thoughts turned to the disturbing voice in his dream. The weight of the unknown, 
+his duties, his parent's expectation, and he couldn't help but feel as though someone or something was watching him.
+It was too much to bear. He turned and fled, his heart pounding in his chest.
+    As he ran, the world around him began to distort, the colors fading into a monochromatic blur. A chilling voice 
+echoed in his mind. 
+    "You have failed, Konstant. You have turned away from your destiny."
+    Panic surged through him as he found himself back in the inky blackness of his dream. The voice, cold and 
+unforgiving, continued. 
+    "You were given a chance, a chance to rise above the ordinary. But you chose fear over courage."
+    A sense of dread washed over him as the darkness closed in. He struggled against the suffocating void, but it was 
+futile. The darkness consumed him, leaving behind only an echo of his once hopeful spirit.
+    
+Konstant's story ended not with glory and triumph, but with the chilling realization of a life unfulfilled, ac destiny denied.
+	
+          Ending Unlocked:  You can not run away from the God’s
+
+""")
 else:
     print("""
-    “What is it?” Konstant asked as he tried to catch his breath.
-    “Mr. Ganas needs a table fixed.”
-    “The coppersmith?”
-    “Yes, he lives just inside of Itea.” his father said returning to examine the dead barley.  
-"He is expecting you by sundown.”
-    “Will there be lodging or am I walking back in the night?”
-    “Mr. Ganas will keep you for a night or two.  You better get moving if you want to make it 
-to Itea by sundown.”
-    Konstant nodded and his father smiled his dark coal eyes expressing his love for his son.
+    Konstant's heart pounded in his chest as he made his decision. The voice in his dream, the enigmatic words of 
+the Oracle, and the stirring within his own soul pulled him towards a path unknown. He would seek the Oracle's 
+counsel, no matter the cost.
 
-    Konstant walked a few miles down the dusty road.  He had packed his sandals, some lamb jerky,
-a cloth of cheese and olives, and his himation in a small bag made of sheep leather.  He should have
-strode confidently, having traveled the road on foot many times before, although this time Konstant grew 
-anxious with every step he made away from the safety of his home.  There was a sinking feeling that he had 
-felt in the void except it was tantalizing.  He wanted to find the source of this feeling, everything else 
-was irrelevant.  He walked entranced by the feeling into the thick dense forest of cypress and oak.  
-    Branches scraped against his body creating new noticeable scratches and tears in both flesh and cloth 
-but he could not feel them.  All he could feel was the enthralling feeling of doom.  The forest seemed 
-immobile as if everything in the world had stopped to let him pursue the strange emotion.  
-    Konstant happened to be walking toward the very hill he remembered in his dream.  On top of that hill 
-stood a small marble edifice that resembled the Acropolis of Athens.  Gold and silver murals glistened in 
-the sunlight bathing the temple and the hill in angelic light that would blind anyone who beheld it.  
-    He kept walking up the hill and onto the steps of the temple.  No one was there.  Konstant found that 
-incredibly odd because temples were almost always bustling with visitors who came to worship the gods.  
-He crept forward trying to see what was going on inside of the temple.  The marble walls were covered in 
-depictions of the Titans.  Above the entrance to the shrine was a beautiful ornate carving cast in gold 
-that depicted Kronos swallowing his children.  Konstant felt odd staring at the image glorifying Cronus’s 
-terrible deed.  To the sides were pillars of marble with veins of gold and silver that rested upon the backs
-of two large serpents whose Jaws were open wide as if stoped mid hunt.  A cool breeze blew from the open 
-doorway and gave Konstant a shiver that ran from his head to his toes.          
-""")
-print()
-print('-----------')
-print()
-#opt 3a question
-print('Should Konstant FIND THE TEMPLE, VISIT THE ORACLE, OR DISMISS THE DREAM?')
-print()
-#opt 3a input
-opt2 = input('Type your choice here: ')
-print()
-print('-----------')
-print()
-print()
-print('-----------')
-print()
-#opt 3a question
-print('Should Konstant FIND THE TEMPLE, VISIT THE ORACLE, OR DISMISS THE DREAM?')
-print()
-#opt 3a input
-opt2 = input('Type your choice here: ')
-print()
-print('-----------')
-print()
-#opt 2 path
-if opt2.lowercase() == 'no':
-    print("""
-    “What is it?” Konstant asked as he tried to catch his breath.
-    “Mr. Ganas needs a table fixed.”
-    “The coppersmith?”
-    “Yes, he lives just inside of Itea.” his father said returning to examine the dead barley.  
-"He is expecting you by sundown.”
-    “Will there be lodging or am I walking back in the night?”
-    “Mr. Ganas will keep you for a night or two.  You better get moving if you want to make it 
-to Itea by sundown.”
-    Konstant nodded and his father smiled his dark coal eyes expressing his love for his son.
+With a heavy heart, he bid farewell to his family, explaining his unusual dream and his intention to visit the 
+Oracle. His parents, though concerned, respected his decision. His father, with a knowing look, offered him a small
+pouch filled with gold coins and a heartfelt blessing.
 
-    Konstant walked a few miles down the dusty road.  He had packed his sandals, some lamb jerky,
-a cloth of cheese and olives, and his himation in a small bag made of sheep leather.  He should have
-strode confidently, having traveled the road on foot many times before, although this time Konstant grew 
-anxious with every step he made away from the safety of his home.  There was a sinking feeling that he had 
-felt in the void except it was tantalizing.  He wanted to find the source of this feeling, everything else 
-was irrelevant.  He walked entranced by the feeling into the thick dense forest of cypress and oak.  
-    Branches scraped against his body creating new noticeable scratches and tears in both flesh and cloth 
-but he could not feel them.  All he could feel was the enthralling feeling of doom.  The forest seemed 
-immobile as if everything in the world had stopped to let him pursue the strange emotion.  
-    Konstant happened to be walking toward the very hill he remembered in his dream.  On top of that hill 
-stood a small marble edifice that resembled the Acropolis of Athens.  Gold and silver murals glistened in 
-the sunlight bathing the temple and the hill in angelic light that would blind anyone who beheld it.  
-    He kept walking up the hill and onto the steps of the temple.  No one was there.  Konstant found that 
-incredibly odd because temples were almost always bustling with visitors who came to worship the gods.  
-He crept forward trying to see what was going on inside of the temple.  The marble walls were covered in 
-depictions of the Titans.  Above the entrance to the shrine was a beautiful ornate carving cast in gold 
-that depicted Kronos swallowing his children.  Konstant felt odd staring at the image glorifying Cronus’s 
-terrible deed.  To the sides were pillars of marble with veins of gold and silver that rested upon the backs
-of two large serpents whose Jaws were open wide as if stoped mid hunt.  A cool breeze blew from the open 
-doorway and gave Konstant a shiver that ran from his head to his toes.  
+The journey to Delphi was arduous. Konstant traversed treacherous mountain paths, crossed raging rivers, and endured
+the scorching sun. But with each step, his determination grew stronger. He was no longer just a simple farm boy; he 
+was a seeker of truth, a potential hero.
+
+Upon reaching the sacred site of Delphi, he was awestruck by its grandeur. The towering cliffs, the ancient ruins, 
+and the serene atmosphere filled him with a sense of reverence. He ascended the winding path to the Oracle's temple,
+ his heart filled with anticipation and trepidation.
+
+Inside the temple, the air was thick with incense and the low murmur of prayers. He approached the Pythia, the Oracle's
+priestess, who sat on a tripod, her face obscured by a veil. As she uttered her prophetic words, Konstant listened 
+intently, his mind racing.
+
+The Oracle's prophecy was cryptic and enigmatic, filled with symbols and riddles. It spoke of a great darkness looming 
+over the land, a threat that only a chosen one could defeat. The prophecy hinted at a hidden power within Konstant, a 
+power that could save the world.
+
+With a newfound purpose, Konstant left Delphi, his heart heavy with responsibility. He knew that his journey had just
+begun. The road ahead was uncertain, but he was ready to face whatever challenges lay in wait. His destiny, it seemed, 
+was intertwined with the fate of the world.
+          
+        ENDING UNLOCKED: A NEW START
 """)
-    
