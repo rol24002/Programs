@@ -1,6 +1,11 @@
 """
     Madison Rollins 
    W04 Prove Assignment: Word Puzzle
+        I added a large word bank that is randomly selected, inclueded a promt 
+    to ask if the user was ready, and a prompt to ask if the user wanted to play
+    afian.  I used AI to help me correct areas of my code that were stumping me
+    and to generat the list of words.  To learrn how to formulate the random word
+    function I used an online python page.
 """
 """
 #title
@@ -51,6 +56,7 @@ else:
     #prove part
 
 """
+
 print("""___________
 
       HI PALL!  WELCOME TO SHIKI'S CRAZY WORD GUEESER!
@@ -89,7 +95,15 @@ else:
     print('YAY!   °˖✧◝(⁰▿⁰)◜✧˖° ')
     print()
   #da word
-    word = 'frazzled'
+    import random
+    WORDS = ("apple", "banana", "cherry", "date", "elderberry", "fig", "grape", "honeydew",
+    "kiwi", "lemon", "lime", "mango", "nectarine", "orange", "papaya", "quince", "raspberry",
+    "strawberry", "tangerine", "watermelon", "candy", "chocolate", "lollipop", "gumdrop", "gummy", 
+    "caramel", "fudge", "nougat", "taffy", "truffle", "bonbon", "marshmallow", "cotton", "sugar", 
+    "sweet", "sour", "bitter", "salty", "spicy", "flavor","kawaii", "cute", "fluffy", "pastel", 
+    "heart", "star", "bunny", "kitty", "panda", "puppy", "fox", "raccoon", "dango", "mochi", "neko", 
+    "usagi", "kawaii desu", "baka", "desu", "arigatō", "kudasai")
+    word = random.choice(WORDS)
     count = 1
     for index in range(len(word)):
         letter = word[index]
@@ -101,28 +115,40 @@ else:
     print()
     #enter Guess
     guess = input('What word is it? (○´ ― `)ゞ  ')
-while True:
-    if range(len(guess)) != range(len(word)):
-            print('I am so sorry, THAT is not an 8 letter word. ༽◺_◿༼  Please try again.')
-            guess = input('What word is it? (○´ ― `)ゞ  ')
-    else:
-        while guess.lower() != word:
-            count = (count + 1)
-        for i in range(len(word)):
-            letter = word[i]
-            guess_letter = guess.lower()[i]
-            if letter.lower() == guess_letter:
-                print(letter.upper(), end=" ")
-            elif guess_letter in word:
-                 print(guess_letter.lower(), end=" ")
-            else:
-                 print('_ ', end="")
-        print()
+    while  guess.lower() != word:
+        count = (count + 1)
+        if len(guess) != len(word):
+                print(f'I am so sorry, THAT is not a {len(word)} letter word. ༽◺_◿༼  Please try again.')
+                guess = input('What word is it? (○´ ― `)ゞ  ')
+        else:
+            for i in range(len(word)):
+                letter = word[i]
+                guess_letter = guess.lower()[i]
+                if letter.lower() == guess_letter:
+                    print(letter.upper(), end=" ")
+                elif guess_letter in word:
+                     print(guess_letter.lower(), end=" ")
+                else:
+                     print('_ ', end="")
+            print()
+
+            if guess.lower() != word:
+                print("That's not quite right. Try again!")
+
         guess = input('What word is it? (○´ ― `)ゞ  ')
-        
-        print(f'YAY!   °˖✧◝(⁰▿⁰)◜✧˖°  You guessed it! The word was {word.upper()}!')
+#while loop end    
+    print(f'YAY!   °˖✧◝(⁰▿⁰)◜✧˖°  You guessed it! The word was {word.upper()}!')
+    print()
+    print(f'You guessed {word.upper()} in {count} tries! ᕙ(‾̀◡‾́)ᕗ ')
+    print()
+    play_again = input("Would you like to play again? づ ◕‿◕ )づ (yes or no): ")
+    if play_again.lower() == "yes":
         print()
-        print(f'You guessed {word.upper()} in {count} tries! ⊹⋛⋋( ՞ਊ ՞)⋌⋚⊹ ')
+        print('⊹⋛⋋( ՞ਊ ՞)⋌⋚⊹')
+        print()
+        ready = input ('Are you ready?: ')
+    else:
+        print("(っ˘̩╭╮˘̩)っ Okay, bye by for now...Thanks for playing!")
 
 """for letter in word:
         if range(len(guess)) != range(len(word)):
