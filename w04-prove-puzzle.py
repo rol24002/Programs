@@ -51,11 +51,14 @@ else:
     print(f'YAY!   °˖✧◝(⁰▿⁰)◜✧˖°  You guessed it! The word was {word.upper()}!')
     print()
     print(f'You guessed it in {count} tries! ⊹⋛⋋( ՞ਊ ՞)⋌⋚⊹ ')
-
-
-    #prove part
-
+    play_again = input("Would you like to play again? づ ◕‿◕ )づ (yes or no): ")
+    if play_again.lower() == "yes":
+        return play_again
+    else:
+        print("(っ˘̩╭╮˘̩)っ Okay, bye by for now...Thanks for playing!")
 """
+
+    
 
 print("""___________
 
@@ -103,10 +106,12 @@ else:
     "sweet", "sour", "bitter", "salty", "spicy", "flavor","kawaii", "cute", "fluffy", "pastel", 
     "heart", "star", "bunny", "kitty", "panda", "puppy", "fox", "raccoon", "dango", "mochi", "neko", 
     "usagi", "kawaii desu", "baka", "desu", "arigatō", "kudasai")
+def play_game():
     word = random.choice(WORDS)
     count = 1
     for index in range(len(word)):
         letter = word[index]
+        
 #display enitial
     print('Here is my word! づ ◕‿◕ )づ ')
     for _ in range(len(word)):
@@ -141,14 +146,12 @@ else:
     print()
     print(f'You guessed {word.upper()} in {count} tries! ᕙ(‾̀◡‾́)ᕗ ')
     print()
-    play_again = input("Would you like to play again? づ ◕‿◕ )づ (yes or no): ")
-    if play_again.lower() == "yes":
-        print()
-        print('⊹⋛⋋( ՞ਊ ՞)⋌⋚⊹')
-        print()
-        ready = input ('Are you ready?: ')
-    else:
-        print("(っ˘̩╭╮˘̩)っ Okay, bye by for now...Thanks for playing!")
+    play_again = input("Would you like to play again? (yes/no): ").lower() == "yes"
+    return play_again
+play_again = True
+while play_again:
+    play_again = play_game()
+print("(っ˘̩╭╮˘̩)っ Okay, bye by for now...Thanks for playing!")
 
 """for letter in word:
         if range(len(guess)) != range(len(word)):
